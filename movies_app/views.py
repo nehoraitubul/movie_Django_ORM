@@ -119,3 +119,6 @@ def movie_actors(requests, movie_id):
             serializer.create(serializer.validated_data)
             return Response()
 
+
+def my_host(request):
+    return render(request, 'static/index.html')
